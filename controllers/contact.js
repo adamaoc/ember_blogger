@@ -8,3 +8,4 @@ Blogger.ContactController = Ember.Controller.extend({
 		}
 	}
 });
+
