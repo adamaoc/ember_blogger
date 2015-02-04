@@ -4,5 +4,6 @@ Blogger.Router.map(function() {
 	this.resource('contact', function() {
 		this.resource('phone');
 	});
-	
+	this.resource('recent-comments');
+	this.resource('post', {path: 'posts/:post_id'});
 });

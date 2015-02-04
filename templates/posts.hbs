@@ -1,9 +1,14 @@
 <div class="">
 	<h1>Hi this is a Page title</h1>
 	<ul>
-		<li><a href="">This is a blog title</a></li>
-		<li><a href="">This is a blog title</a></li>
-		<li><a href="">This is a blog title</a></li>
-		<li><a href="">This is a blog title</a></li>
+		{{#each}}
+			<li>
+				{{#link-to 'post' this.id}}
+					{{title}}
+				{{/link-to}}
+			</li>
+		{{/each}}
 	</ul>
+
+	<a href="#" {{action 'sortByTitle'}}>Sort by Title</a>
 </div>

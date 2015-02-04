@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+
+{{#if isEditing}}
+	<form>
+		<p>
+			<label for="title">Title</label>
+			{{input id="title" value=title}}
+		</p>
+		<p>
+			<label for="body">Body</label>
+			{{textarea id="body" rows="15" value=body}}
+		</p>
+
+		<button {{action 'save'}}>Save</button>
+	</form>
+{{else}}
+
+	<p>{{body}}</p>
+	<button {{action 'edit'}}>Edit</button>
+
+{{/if}}
