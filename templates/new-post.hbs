@@ -1,0 +1,13 @@
+<h1>New Post</h1>
+<form>
+	<p>
+		<label for="title">Title</label>
+		{{input id="title" value=title}}
+	</p>
+	<p>
+		<label for="body">Body</label>
+		{{textarea id="body" rows="15" value=body}}
+	</p>
+
+	<button {{action 'save'}}>Save</button>
+</form>

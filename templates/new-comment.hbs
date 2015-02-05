@@ -1,0 +1,9 @@
+<h2>New Comment</h2>
+<form>
+	<p>
+		<label for="text">Your toughts: </label>
+		{{textarea value=text id="text" rows="5"}}
+	</p>
+
+	<button {{action 'save'}}>Add your comment</button>
+</form>
